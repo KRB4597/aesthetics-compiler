@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geometric-aesthetics-compiler"
+version = "0.1.0"
+description = "A structure-preserving aesthetic intermediate representation with pluggable framework analysers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Kim R. Baley", email = "kb@justiceinnovations.us"},
+    {name = "Andrew H. Bond"},
+]
+keywords = [
+    "computational aesthetics",
+    "aesthetic analysis",
+    "intermediate representation",
+    "graph IR",
+    "visual composition",
+    "color theory",
+    "natural language processing",
+]
+dependencies = [
+    "pydantic>=2.0",
+    "typer>=0.9",
+    "rich>=13.0",
+    "Pillow>=10.0",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+cv = ["scikit-image>=0.21"]
+llm = ["openai>=1.0"]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+aesthetic-compile = "aesthetic_compiler.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
