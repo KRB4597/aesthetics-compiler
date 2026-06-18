@@ -1,9 +1,9 @@
-import pytest
-from aesthetic_compiler.ir.schemas import AestheticIR, Document, AestheticVector
-from aesthetic_compiler.projections.birkhoff import BirkhoffProjection
-from aesthetic_compiler.projections.arnheim import ArnheimProjection
-from aesthetic_compiler.projections.berlyne import BerlyneProjection
-from aesthetic_compiler.projections.gestalt import GestaltProjection
+﻿import pytest
+from aesthetics_compiler.ir.schemas import AestheticIR, Document, AestheticVector
+from aesthetics_compiler.projections.birkhoff import BirkhoffProjection
+from aesthetics_compiler.projections.arnheim import ArnheimProjection
+from aesthetics_compiler.projections.berlyne import BerlyneProjection
+from aesthetics_compiler.projections.gestalt import GestaltProjection
 
 
 def _make_ir(scores: dict) -> AestheticIR:

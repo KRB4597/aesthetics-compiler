@@ -1,4 +1,4 @@
-# geometric-aesthetics-compiler Architecture (v0.1.0)
+﻿# aesthetics-compiler Architecture (v0.1.0)
 
 This document describes the runtime architecture as of `main` at v0.1.0. For the eleven-module AM-DAG see `docs/am_dag.md`. For the four projections see `docs/projections.md`. For extraction tiers and vocabulary tables see `docs/extraction.md`.
 
@@ -81,7 +81,7 @@ The substrate is **descriptive**: what visual elements are present, how they rel
 
 ## AestheticGraph schema
 
-`src/aesthetic_compiler/ir/graph/`
+`src/aesthetics_compiler/ir/graph/`
 
 ```python
 class NodeKind(str, Enum):
@@ -185,20 +185,20 @@ All four modes produce the same `AestheticIR` schema. Projections, the AM-DAG, a
 
 ```bash
 # All four (default)
-aesthetic-compile compile artwork.txt
+aesthetics-compile compile artwork.txt
 
 # Subset
-aesthetic-compile compile artwork.jpg --projection birkhoff,arnheim
+aesthetics-compile compile artwork.jpg --projection birkhoff,arnheim
 
 # Force input mode
-aesthetic-compile compile page.html --input-mode html --projection gestalt
+aesthetics-compile compile page.html --input-mode html --projection gestalt
 ```
 
 ---
 
 ## Projection layer
 
-`src/aesthetic_compiler/projections/`
+`src/aesthetics_compiler/projections/`
 
 Each `BaseProjection` reads the fully-assembled `AestheticIR` and returns a `ProjectionResult`:
 
@@ -237,7 +237,7 @@ The compiler does **not** populate a winner.
 
 ## AM-DAG (aesthetic evaluator)
 
-`src/aesthetic_compiler/am_dag/`
+`src/aesthetics_compiler/am_dag/`
 
 Eleven modules run in topological dependency order. See `docs/am_dag.md` for full specifications.
 
@@ -320,8 +320,8 @@ ir.schema_version                 "aesthetic_ir_v0.1"
 
 | Format | Command | File |
 |---|---|---|
-| AestheticIR JSON | `aesthetic-compile compile … --out file.ir.json` | orchestrator |
-| Schema.org/VisualArtwork JSON-LD | `aesthetic-compile export-schema-org file.ir.json` | `export/schema_org.py` |
+| AestheticIR JSON | `aesthetics-compile compile … --out file.ir.json` | orchestrator |
+| Schema.org/VisualArtwork JSON-LD | `aesthetics-compile export-schema-org file.ir.json` | `export/schema_org.py` |
 
 ---
 

@@ -1,6 +1,6 @@
-# Aesthetic Projections
+﻿# Aesthetic Projections
 
-`src/aesthetic_compiler/projections/`
+`src/aesthetics_compiler/projections/`
 
 A projection is an aesthetic theory analyser. It reads the fully-assembled `AestheticIR` and emits a `ProjectionResult` expressing what that specific theory says about the work's harmony. The compiler ships four projections grounded in foundational aesthetic scholarship. Any subset may be selected at compile time via `--projection`.
 
@@ -30,13 +30,13 @@ class ProjectionResult(BaseModel):
 
 ```bash
 # All four (default)
-aesthetic-compile compile artwork.txt
+aesthetics-compile compile artwork.txt
 
 # Two projections
-aesthetic-compile compile artwork.jpg --projection birkhoff,arnheim
+aesthetics-compile compile artwork.jpg --projection birkhoff,arnheim
 
 # One projection
-aesthetic-compile compile design.html --projection gestalt
+aesthetics-compile compile design.html --projection gestalt
 ```
 
 ---

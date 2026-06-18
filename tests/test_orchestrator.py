@@ -1,6 +1,6 @@
-import pytest
-from aesthetic_compiler.pipeline.orchestrator import compile_document
-from aesthetic_compiler.tiers import ALL_PROJECTIONS
+﻿import pytest
+from aesthetics_compiler.pipeline.orchestrator import compile_document
+from aesthetics_compiler.tiers import ALL_PROJECTIONS
 
 
 def test_default_projections(tmp_path):

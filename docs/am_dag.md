@@ -1,6 +1,6 @@
-# AM-DAG: Eleven-Module Aesthetic Evaluator
+﻿# AM-DAG: Eleven-Module Aesthetic Evaluator
 
-`src/aesthetic_compiler/am_dag/`
+`src/aesthetics_compiler/am_dag/`
 
 The AM-DAG (Aesthetic Module directed acyclic graph) evaluates the eleven canonical aesthetic dimensions in topological dependency order and writes the aggregate `AestheticVector` into `ir.aggregate_aesthetic_vector` during Pass 8. Each module is a function `evaluate(ir, ctx) -> DimensionScore` in `am_dag/modules/`.
 

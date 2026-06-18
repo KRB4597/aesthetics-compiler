@@ -1,6 +1,6 @@
-# Extraction Tiers and Vocabulary
+﻿# Extraction Tiers and Vocabulary
 
-`src/aesthetic_compiler/annotation/` and `src/aesthetic_compiler/ingestion/`
+`src/aesthetics_compiler/annotation/` and `src/aesthetics_compiler/ingestion/`
 
 The extraction subsystem transforms a raw source into the flat IR objects — `AestheticElement`, `CompositionZone`, `ColorScheme`, `VisualMotif`, `AestheticFact` — that Pass 7.5 promotes into the `AestheticGraph`. There are four extraction tiers, one per input mode, plus a Mock tier for testing. All tiers produce the same schema.
 

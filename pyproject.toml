@@ -1,9 +1,9 @@
-[build-system]
+﻿[build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "geometric-aesthetics-compiler"
+name = "aesthetics-compiler"
 version = "0.1.0"
 description = "A structure-preserving aesthetic intermediate representation with pluggable framework analysers"
 readme = "README.md"
@@ -39,7 +39,7 @@ dev = [
 ]
 
 [project.scripts]
-aesthetic-compile = "aesthetic_compiler.cli:app"
+aesthetics-compile = "aesthetics_compiler.cli:app"
 
 [tool.setuptools.packages.find]
 where = ["src"]

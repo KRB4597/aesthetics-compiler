@@ -1,8 +1,8 @@
-from aesthetic_compiler.ir.schemas import (
+﻿from aesthetics_compiler.ir.schemas import (
     AestheticVector, DimensionScore, AESTHETIC_DIMENSIONS,
     _direction, AestheticIR, Document, AuditRecord,
 )
-from aesthetic_compiler import SCHEMA_VERSION
+from aesthetics_compiler import SCHEMA_VERSION
 
 
 def test_dimension_count():

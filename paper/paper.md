@@ -1,5 +1,5 @@
----
-title: 'geometric-aesthetics-compiler: a structure-preserving aesthetic intermediate representation with pluggable framework analysers'
+﻿---
+title: 'aesthetics-compiler: a structure-preserving aesthetic intermediate representation with pluggable framework analysers'
 
 tags:
   - Python
@@ -34,7 +34,7 @@ bibliography: paper.bib
 
 ## Summary
 
-`geometric-aesthetics-compiler` is a Python compiler that accepts natural-language
+`aesthetics-compiler` is a Python compiler that accepts natural-language
 descriptions, image files (JPEG/PNG), HTML documents, or multimedia (video/GIF)
 as input and emits a typed directed acyclic graph — the **AestheticGraph** —
 anchored by a canonical SHA-256 hash. Four aesthetic projection analysers
@@ -73,7 +73,7 @@ typically a deep learning model trained on human ratings — whose theoretical
 choices are invisible: the system looks framework-neutral while quietly encoding
 one aesthetic tradition at every aggregation step.
 
-`geometric-aesthetics-compiler` addresses both problems architecturally.
+`aesthetics-compiler` addresses both problems architecturally.
 
 **Structure preservation**: the IR is a typed graph (nodes are elements, zones,
 color schemes, motifs, tension vectors, and aesthetic facts; edges are typed
@@ -113,7 +113,7 @@ experimental aesthetics research from Birkhoff through Berlyne. Adjacent work
 falls into three categories: deep learning aesthetic scoring models that reduce
 to a single quality number [@Datta2006; @Karayev2013]; image feature extraction
 libraries that compute metrics without theoretical framework; and expert systems
-that encode only one tradition's norms. `geometric-aesthetics-compiler`
+that encode only one tradition's norms. `aesthetics-compiler`
 occupies the structural-compositional gap between these.
 
 The compiler is designed as the computational counterpart to *Geometric
@@ -229,7 +229,7 @@ the Birkhoff and Gestalt neutral verdicts cancel the Arnheim and Berlyne
 harmonious verdicts.  The full result is reproducible with:
 
 ```bash
-aesthetic-compile compile examples/rothko_description.txt \
+aesthetics-compile compile examples/rothko_description.txt \
     --projection birkhoff,arnheim,berlyne,gestalt
 ```
 

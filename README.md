@@ -1,4 +1,4 @@
-# geometric-aesthetics-compiler
+﻿# aesthetics-compiler
 
 A structure-preserving aesthetic intermediate representation (AestheticIR) with pluggable culinary framework analysers.
 
@@ -16,20 +16,20 @@ pip install -e ".[cv]"
 
 ```bash
 # Text description input
-aesthetic-compile compile examples/rothko_description.txt
+aesthetics-compile compile examples/rothko_description.txt
 
 # Image file input
-aesthetic-compile compile examples/composition.jpg
+aesthetics-compile compile examples/composition.jpg
 
 # Select projections
-aesthetic-compile compile examples/mondrian_description.txt \
+aesthetics-compile compile examples/mondrian_description.txt \
     --projection birkhoff,arnheim
 
 # Save IR
-aesthetic-compile compile examples/rothko_description.txt --out rothko.ir.json
+aesthetics-compile compile examples/rothko_description.txt --out rothko.ir.json
 
 # Generate report
-aesthetic-compile report rothko.ir.json
+aesthetics-compile report rothko.ir.json
 ```
 
 ## Ten aesthetic dimensions

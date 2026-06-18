@@ -1,6 +1,6 @@
-from aesthetic_compiler.ir.graph.schema import AestheticNode, AestheticEdge, NodeKind, EdgeKind
-from aesthetic_compiler.ir.graph.container import AestheticGraph
-from aesthetic_compiler.ir.graph.canonical import canonical_hash
+﻿from aesthetics_compiler.ir.graph.schema import AestheticNode, AestheticEdge, NodeKind, EdgeKind
+from aesthetics_compiler.ir.graph.container import AestheticGraph
+from aesthetics_compiler.ir.graph.canonical import canonical_hash
 
 
 def _make_graph() -> AestheticGraph:
