@@ -31,6 +31,7 @@ def compile_document(
     projections: list[str] | None = None,
     title: str | None = None,
     quiet: bool = False,
+    extractor: str = "rule",
 ) -> AestheticIR:
     source = str(source)
     passes: list[PassRecord] = []
@@ -96,9 +97,14 @@ def compile_document(
     # ------------------------------------------------------------------
     extractor_tier: str
     if detected == InputMode.TEXT:
-        from aesthetics_compiler.annotation.rule_extractor import RuleExtractor
-        result = RuleExtractor().extract(text)  # type: ignore[name-defined]
-        extractor_tier = CompilerTier.RULE
+        if extractor == "nlp":
+            from aesthetics_compiler.annotation.nlp_extractor import NlpExtractor
+            result = NlpExtractor().extract(text)  # type: ignore[name-defined]
+            extractor_tier = CompilerTier.NLP
+        else:
+            from aesthetics_compiler.annotation.rule_extractor import RuleExtractor
+            result = RuleExtractor().extract(text)  # type: ignore[name-defined]
+            extractor_tier = CompilerTier.RULE
     elif detected == InputMode.IMAGE:
         from aesthetics_compiler.annotation.image_extractor import ImageExtractor
         result = ImageExtractor().extract(raw_meta)

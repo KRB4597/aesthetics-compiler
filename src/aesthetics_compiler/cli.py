@@ -27,6 +27,10 @@ def compile(
         None, "--input-mode", "-m",
         help="Force input mode: text, image, html, multimedia (default: auto-detect)",
     ),
+    extractor: str = typer.Option(
+        "rule", "--extractor", "-e",
+        help="Text extractor tier: rule (default) or nlp (spaCy; needs the [nlp] extra)",
+    ),
     title: Optional[str] = typer.Option(None, "--title", "-t", help="Override document title"),
     quiet: bool = typer.Option(False, "--quiet", "-q"),
 ) -> None:
@@ -43,6 +47,7 @@ def compile(
             projections=projection_list,
             title=title,
             quiet=quiet,
+            extractor=extractor,
         )
     except ValueError as e:
         console.print(f"[red]Error:[/red] {e}")

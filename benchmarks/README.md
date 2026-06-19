@@ -93,3 +93,37 @@ color_harmony       color_harmony         1000     +0.55   strong
 The same `run_aadb.py` works with **AVA** (Murray et al., CVPR 2012, ~250k
 images) if you export an `image,overall` CSV — you just won't have the
 attribute columns, so only the overall-score row will be populated.
+
+## Extractor bake-off — which NLP tool to use
+
+`run_aadb.py` evaluates the **image** extractor against human ratings. The
+**text** extractor (keyword matching over art descriptions) is a separate
+question, and AADB can't answer it (no text). `extractor_eval.py` is the
+instrument for that: a gold corpus of descriptions annotated by the linguistic
+phenomenon that separates good extractors from bad ones (negation, substring
+traps, inflection, out-of-vocabulary synonyms), scored by three contenders
+(`contenders.py`): the current `rule` matcher, a `spacy` extractor, and an
+`embedding` (sentence-transformers) extractor.
+
+```bash
+python -m benchmarks.extractor_eval
+```
+
+Result on the bundled corpus:
+
+```
+category           rule      spacy  embedding
+normal             100%       100%       100%
+negation             0%       100%         0%
+substring            0%       100%         0%
+inflection           0%       100%       100%
+synonym             33%        33%        67%
+-----------------------------------------------
+ALL                 42%        89%        53%
+```
+
+**spaCy wins (89% vs rule's 42%)** — it fixes negation, substring traps, and
+inflection; embeddings only lead on out-of-vocabulary synonyms. This is why the
+`nlp` extractor tier (`--extractor nlp`, `pip install -e ".[nlp]"` +
+`python -m spacy download en_core_web_sm`) is spaCy-based. A spaCy+embedding
+hybrid would be the next step if open-vocabulary recall matters.
