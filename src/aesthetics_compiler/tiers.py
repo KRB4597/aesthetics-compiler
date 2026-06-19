@@ -3,6 +3,7 @@ from enum import Enum
 
 class CompilerTier(str, Enum):
     RULE = "rule"
+    NLP = "nlp"
     IMAGE = "image"
     HTML = "html"
     MULTIMEDIA = "multimedia"
