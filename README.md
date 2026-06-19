@@ -1,4 +1,4 @@
-﻿# aesthetics-compiler
+# aesthetics-compiler
 
 A structure-preserving aesthetic intermediate representation (AestheticIR) with pluggable culinary framework analysers.
 

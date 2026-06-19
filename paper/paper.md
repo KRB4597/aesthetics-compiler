@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'aesthetics-compiler: a structure-preserving aesthetic intermediate representation with pluggable framework analysers'
 
 tags:

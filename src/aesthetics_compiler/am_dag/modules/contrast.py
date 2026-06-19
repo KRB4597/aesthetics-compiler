@@ -1,4 +1,4 @@
-﻿"""ContrastModule (k=6) — reads balance, density ctx."""
+"""ContrastModule (k=6) — reads balance, density ctx."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 

@@ -1,4 +1,4 @@
-﻿"""SaturationModule (k=5) — reads hue_coherence ctx."""
+"""SaturationModule (k=5) — reads hue_coherence ctx."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 

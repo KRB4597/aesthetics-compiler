@@ -1,4 +1,4 @@
-﻿"""HueCoherenceModule (k=4) — root (no upstream spatial deps)."""
+"""HueCoherenceModule (k=4) — root (no upstream spatial deps)."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 

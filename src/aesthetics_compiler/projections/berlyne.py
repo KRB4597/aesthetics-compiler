@@ -1,4 +1,4 @@
-﻿"""BerlyneProjection — arousal potential and inverted-U hedonic curve."""
+"""BerlyneProjection — arousal potential and inverted-U hedonic curve."""
 import math
 from aesthetics_compiler.ir.schemas import AestheticIR, ProjectionResult, AestheticFinding
 from aesthetics_compiler.projections.base import BaseProjection

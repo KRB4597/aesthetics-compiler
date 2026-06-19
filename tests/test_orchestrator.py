@@ -1,4 +1,4 @@
-﻿import pytest
+import pytest
 from aesthetics_compiler.pipeline.orchestrator import compile_document
 from aesthetics_compiler.tiers import ALL_PROJECTIONS
 

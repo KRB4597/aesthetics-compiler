@@ -1,4 +1,4 @@
-﻿"""DensityModule (k=3) — reads complexity ctx."""
+"""DensityModule (k=3) — reads complexity ctx."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 

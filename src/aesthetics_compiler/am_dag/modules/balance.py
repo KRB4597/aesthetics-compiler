@@ -1,4 +1,4 @@
-﻿"""BalanceModule (k=2) — reads order ctx."""
+"""BalanceModule (k=2) — reads order ctx."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 

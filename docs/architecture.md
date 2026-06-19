@@ -1,4 +1,4 @@
-﻿# aesthetics-compiler Architecture (v0.1.0)
+# aesthetics-compiler Architecture (v0.1.0)
 
 This document describes the runtime architecture as of `main` at v0.1.0. For the eleven-module AM-DAG see `docs/am_dag.md`. For the four projections see `docs/projections.md`. For extraction tiers and vocabulary tables see `docs/extraction.md`.
 

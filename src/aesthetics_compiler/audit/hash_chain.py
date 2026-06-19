@@ -1,4 +1,4 @@
-﻿from aesthetics_compiler.ir.schemas import AuditRecord, PassRecord
+from aesthetics_compiler.ir.schemas import AuditRecord, PassRecord
 
 
 def build_audit(

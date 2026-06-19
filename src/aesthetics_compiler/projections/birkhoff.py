@@ -1,4 +1,4 @@
-﻿"""BirkhoffProjection — M = log(1+O)/(1+C) aesthetic measure."""
+"""BirkhoffProjection — M = log(1+O)/(1+C) aesthetic measure."""
 import math
 from aesthetics_compiler.ir.schemas import AestheticIR, ProjectionResult, AestheticFinding
 from aesthetics_compiler.projections.base import BaseProjection

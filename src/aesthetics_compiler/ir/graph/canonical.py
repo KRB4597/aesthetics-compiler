@@ -1,4 +1,4 @@
-﻿import hashlib
+import hashlib
 import json
 from aesthetics_compiler.ir.graph.container import AestheticGraph
 

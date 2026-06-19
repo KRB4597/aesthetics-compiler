@@ -1,4 +1,4 @@
-﻿import pytest
+import pytest
 from aesthetics_compiler.ir.schemas import AestheticIR, Document, AestheticVector
 from aesthetics_compiler.projections.birkhoff import BirkhoffProjection
 from aesthetics_compiler.projections.arnheim import ArnheimProjection

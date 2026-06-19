@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 from aesthetics_compiler.ir.schemas import AestheticIR, AestheticVector, DimensionScore, _direction
 from aesthetics_compiler.am_dag.modules import (
     complexity, order, balance, density,

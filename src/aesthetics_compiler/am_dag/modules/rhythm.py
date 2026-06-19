@@ -1,4 +1,4 @@
-﻿"""RhythmModule (k=10) — temporal pacing. 0 for static; computed for multimedia."""
+"""RhythmModule (k=10) — temporal pacing. 0 for static; computed for multimedia."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 

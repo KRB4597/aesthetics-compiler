@@ -1,4 +1,4 @@
-﻿"""OrderModule (k=1) — reads complexity ctx."""
+"""OrderModule (k=1) — reads complexity ctx."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 from aesthetics_compiler.ir.graph.schema import EdgeKind
 

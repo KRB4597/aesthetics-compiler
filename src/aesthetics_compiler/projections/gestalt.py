@@ -1,4 +1,4 @@
-﻿"""GestaltProjection — grouping coherence, figure-ground, closure."""
+"""GestaltProjection — grouping coherence, figure-ground, closure."""
 from aesthetics_compiler.ir.schemas import AestheticIR, ProjectionResult, AestheticFinding
 from aesthetics_compiler.projections.base import BaseProjection
 from aesthetics_compiler.ir.graph.schema import EdgeKind

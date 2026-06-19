@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 from typing import Any
 from aesthetics_compiler.annotation.base import BaseExtractor, ExtractorResult
 from aesthetics_compiler.annotation.image_extractor import ImageExtractor

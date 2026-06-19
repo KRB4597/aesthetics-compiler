@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 import re
 from aesthetics_compiler.ir.schemas import Segment
 

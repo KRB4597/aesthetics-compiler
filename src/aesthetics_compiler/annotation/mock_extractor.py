@@ -1,4 +1,4 @@
-﻿from aesthetics_compiler.annotation.base import BaseExtractor, ExtractorResult
+from aesthetics_compiler.annotation.base import BaseExtractor, ExtractorResult
 from aesthetics_compiler.ir.schemas import (
     AestheticElement, CompositionZone, ColorScheme, AestheticVector, DimensionScore
 )

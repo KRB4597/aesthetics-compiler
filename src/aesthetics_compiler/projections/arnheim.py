@@ -1,4 +1,4 @@
-﻿"""ArnheimProjection — visual dynamics: balance, tension, spatial equilibrium."""
+"""ArnheimProjection — visual dynamics: balance, tension, spatial equilibrium."""
 from aesthetics_compiler.ir.schemas import AestheticIR, ProjectionResult, AestheticFinding
 from aesthetics_compiler.projections.base import BaseProjection
 

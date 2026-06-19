@@ -1,4 +1,4 @@
-﻿"""ComplexityModule (k=0) — root, no upstream deps."""
+"""ComplexityModule (k=0) — root, no upstream deps."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 

@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 from pydantic import BaseModel
 from aesthetics_compiler.ir.graph.schema import AestheticNode, AestheticEdge, NodeKind, EdgeKind
 
