@@ -1,4 +1,4 @@
-﻿"""TensionModule (k=8) — reads order, balance ctx. Arnheim visual dynamics."""
+"""TensionModule (k=8) — reads order, balance ctx. Arnheim visual dynamics."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 from aesthetics_compiler.ir.graph.schema import EdgeKind
 
@@ -9,6 +9,7 @@ def evaluate(ir: AestheticIR, ctx: dict) -> DimensionScore:
 
     # GENERATES_TENSION edges amplify tension
     tension_boost = 0.0
+    gen_edges = []
     if ir.aesthetic_graph:
         gen_edges = [e for e in ir.aesthetic_graph.edges if e.kind == EdgeKind.GENERATES_TENSION]
         tension_boost = min(0.2, len(gen_edges) * 0.05)
@@ -31,5 +32,5 @@ def evaluate(ir: AestheticIR, ctx: dict) -> DimensionScore:
         value=adjusted,
         confidence=0.7,
         direction=_direction(adjusted),
-        explanation=f"Tension {adjusted:.2f}; balance contribution {balance_contribution:.2f}; tension edges {len(ir.aesthetic_graph.edges) if ir.aesthetic_graph else 0}",
+        explanation=f"Tension {adjusted:.2f}; balance contribution {balance_contribution:.2f}; tension edges {len(gen_edges)}",
     )

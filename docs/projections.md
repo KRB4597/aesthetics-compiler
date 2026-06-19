@@ -1,4 +1,4 @@
-﻿# Aesthetic Projections
+# Aesthetic Projections
 
 `src/aesthetics_compiler/projections/`
 

@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Optional
@@ -155,3 +155,7 @@ def _print_summary(ir) -> None:
         console.print("[yellow]  ⚠ Cross-projection disagreement detected — see ir.cross_projection_disagreement[/yellow]")
     console.print(f"\n  graph_hash={ir.audit.graph_hash or 'none'}")
     console.print(f"  schema_version={ir.schema_version}")
+
+
+if __name__ == "__main__":
+    app()

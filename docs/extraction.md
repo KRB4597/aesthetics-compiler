@@ -1,4 +1,4 @@
-﻿# Extraction Tiers and Vocabulary
+# Extraction Tiers and Vocabulary
 
 `src/aesthetics_compiler/annotation/` and `src/aesthetics_compiler/ingestion/`
 

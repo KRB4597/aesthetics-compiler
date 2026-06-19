@@ -1,4 +1,4 @@
-﻿# AM-DAG: Eleven-Module Aesthetic Evaluator
+# AM-DAG: Eleven-Module Aesthetic Evaluator
 
 `src/aesthetics_compiler/am_dag/`
 

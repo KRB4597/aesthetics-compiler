@@ -1,4 +1,4 @@
-﻿from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 from aesthetics_compiler.ir.schemas import AestheticIR, ProjectionResult
 
 

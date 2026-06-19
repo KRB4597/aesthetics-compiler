@@ -1,4 +1,4 @@
-﻿"""ColorHarmonyModule (k=7) — reads hue_coherence, saturation ctx."""
+"""ColorHarmonyModule (k=7) — reads hue_coherence, saturation ctx."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 _HARMONY_SCORE_MAP = {

@@ -1,4 +1,4 @@
-﻿"""ClosureModule (k=9) — reads complexity, order ctx. Gestalt completion demand."""
+"""ClosureModule (k=9) — reads complexity, order ctx. Gestalt completion demand."""
 from aesthetics_compiler.ir.schemas import AestheticIR, DimensionScore, _direction
 
 

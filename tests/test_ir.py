@@ -1,4 +1,4 @@
-﻿from aesthetics_compiler.ir.schemas import (
+from aesthetics_compiler.ir.schemas import (
     AestheticVector, DimensionScore, AESTHETIC_DIMENSIONS,
     _direction, AestheticIR, Document, AuditRecord,
 )
