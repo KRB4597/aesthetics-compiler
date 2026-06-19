@@ -12,3 +12,6 @@ venv/
 htmlcov/
 *.ir.json
 *.jsonld
+
+# Benchmark sample data (auto-generated on first run)
+benchmarks/sample_data/
