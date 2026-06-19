@@ -6,7 +6,6 @@ class CompilerTier(str, Enum):
     IMAGE = "image"
     HTML = "html"
     MULTIMEDIA = "multimedia"
-    LLM = "llm"
     MOCK = "mock"
 
 
